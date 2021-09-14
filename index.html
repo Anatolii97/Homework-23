@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #container {
+        min-height:70vh;
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+    }
+    .border {
+        border: 1px solid black;
+        height: 180px;
+        width: 30%;
+    }
+    .hide{
+        margin: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+    #recordStop{
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        height: 30px;
+        margin-left: 50px;
+    }
+    #recordStop:hover{
+        cursor: pointer;
+    }
+    #play{
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    #play:hover{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="container1" class="news-btn-div border" data-tab="1" onclick="req(1)">
+            <div class="block hide" id="1">
+                <span id="newsId1"></span>
+                <h5 id="newsTitle1"></h5>
+                <span id="newsContent1"></span>
+            </div>
+        </div>
+        <div id="container2" class="news-btn-div border" data-tab="2" onclick="req(2)">
+            <div class="block hide" id="2">
+                <span id="newsId2"></span>
+                <h5 id="newsTitle2"></h5>
+                <span id="newsContent2"></span>
+            </div>
+        </div>
+        <div id="container3" class="news-btn-div border" data-tab="3" onclick="req(3)">
+            <div class="block hide" id="3">
+                <span id="newsId3"></span>
+                <h5 id="newsTitle3"></h5>
+                <span id="newsContent3"></span>
+            </div>
+        </div>
+        <div id="container4" class="news-btn-div border" data-tab="4" onclick="req(4)">
+            <div class="block hide" id="4">
+                <span id="newsId4"></span>
+                <h5 id="newsTitle4"></h5>
+                <span id="newsContent4"></span>
+            </div>
+        </div>
+        <div id="container5" class="news-btn-div border" data-tab="5" onclick="req(5)">
+            <div class="block hide" id="5">
+                <span id="newsId5"></span>
+                <h5 id="newsTitle5"></h5>
+                <span id="newsContent5"></span>
+            </div>
+        </div>
+        <div id="container6" class="news-btn-div border" data-tab="6" onclick="req(6)">
+            <div class="block hide" id="6">
+                <span id="newsId6"></span>
+                <h5 id="newsTitle6"></h5>
+                <span id="newsContent6"></span>
+            </div>
+        </div>
+        <div id="container7" class="news-btn-div border" data-tab="7" onclick="req(7)">
+            <div class="block hide" id="7">
+                <span id="newsId7"></span>
+                <h5 id="newsTitle7"></h5>
+                <span id="newsContent7"></span>
+            </div>
+        </div>
+        <div id="container8" class="news-btn-div border" data-tab="8" onclick="req(8)">
+            <div class="block hide" id="8">
+                <span id="newsId8"></span>
+                <h5 id="newsTitle8"></h5>
+                <span id="newsContent8"></span>
+            </div>
+        </div>
+        <div id="container9" class="news-btn-div border" data-tab="9" onclick="req(9)">
+            <div class="block hide" id="9">
+                <span id="newsId9"></span>
+                <h5 id="newsTitle9"></h5>
+                <span id="newsContent9"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="button" id="recordStop" value="Record">
+        <input type="button" id="play" value="Play">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
